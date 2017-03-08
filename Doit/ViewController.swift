@@ -56,6 +56,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return [task1, task2, task3]
     }
 
+    @IBAction func addTask(_ sender: Any) {
+        performSegue(withIdentifier: "addSegue", sender: nil)
+    }
 
 }
 
