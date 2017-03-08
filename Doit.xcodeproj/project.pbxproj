@@ -13,6 +13,7 @@
 		D07C5B961E6FA717001432A0 /* Doit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D07C5B941E6FA717001432A0 /* Doit.xcdatamodeld */; };
 		D07C5B981E6FA717001432A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07C5B971E6FA717001432A0 /* Assets.xcassets */; };
 		D07C5B9B1E6FA717001432A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D07C5B991E6FA717001432A0 /* LaunchScreen.storyboard */; };
+		D07C5BA31E6FAFA4001432A0 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07C5BA21E6FAFA4001432A0 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D07C5B971E6FA717001432A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07C5B9A1E6FA717001432A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D07C5B9C1E6FA717001432A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D07C5BA21E6FAFA4001432A0 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D07C5B8D1E6FA717001432A0 /* AppDelegate.swift */,
 				D07C5B8F1E6FA717001432A0 /* ViewController.swift */,
 				D07C5B911E6FA717001432A0 /* Main.storyboard */,
+				D07C5BA21E6FAFA4001432A0 /* Task.swift */,
 				D07C5B971E6FA717001432A0 /* Assets.xcassets */,
 				D07C5B991E6FA717001432A0 /* LaunchScreen.storyboard */,
 				D07C5B9C1E6FA717001432A0 /* Info.plist */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D07C5BA31E6FAFA4001432A0 /* Task.swift in Sources */,
 				D07C5B901E6FA717001432A0 /* ViewController.swift in Sources */,
 				D07C5B8E1E6FA717001432A0 /* AppDelegate.swift in Sources */,
 				D07C5B961E6FA717001432A0 /* Doit.xcdatamodeld in Sources */,
