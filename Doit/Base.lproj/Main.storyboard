@@ -63,7 +63,48 @@
                     <view key="view" contentMode="scaleToFill" id="xJc-st-XVS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tha-co-F9D">
+                                <rect key="frame" x="162" y="79" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3j7-aq-TCb">
+                                <rect key="frame" x="56" y="110" width="263" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Important:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueB-Bo-mw5">
+                                <rect key="frame" x="147.5" y="180" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nm0-Yg-ebW">
+                                <rect key="frame" x="163" y="211" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iab-h8-2eW">
+                                <rect key="frame" x="172.5" y="282" width="30" height="30"/>
+                                <state key="normal" title="Add"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tha-co-F9D" firstAttribute="centerX" secondItem="xJc-st-XVS" secondAttribute="centerX" id="2Yx-ae-0W2"/>
+                            <constraint firstItem="iab-h8-2eW" firstAttribute="centerX" secondItem="xJc-st-XVS" secondAttribute="centerX" id="382-Yk-h2y"/>
+                            <constraint firstItem="3j7-aq-TCb" firstAttribute="top" secondItem="tha-co-F9D" secondAttribute="bottom" constant="10" id="Dac-Zq-Yhu"/>
+                            <constraint firstItem="3j7-aq-TCb" firstAttribute="centerX" secondItem="xJc-st-XVS" secondAttribute="centerX" id="Fz8-y9-r0d"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3j7-aq-TCb" secondAttribute="trailing" constant="40" id="Qan-Bu-8Xd"/>
+                            <constraint firstItem="Nm0-Yg-ebW" firstAttribute="top" secondItem="ueB-Bo-mw5" secondAttribute="bottom" constant="10" id="W3I-2w-OHe"/>
+                            <constraint firstItem="ueB-Bo-mw5" firstAttribute="top" secondItem="3j7-aq-TCb" secondAttribute="bottom" constant="40" id="WLm-Xw-1TA"/>
+                            <constraint firstItem="Nm0-Yg-ebW" firstAttribute="centerX" secondItem="xJc-st-XVS" secondAttribute="centerX" id="eJG-BZ-Ib3"/>
+                            <constraint firstItem="iab-h8-2eW" firstAttribute="top" secondItem="Nm0-Yg-ebW" secondAttribute="bottom" constant="40" id="gCV-Sk-FU4"/>
+                            <constraint firstItem="ueB-Bo-mw5" firstAttribute="centerX" secondItem="xJc-st-XVS" secondAttribute="centerX" id="oU4-ZL-pyF"/>
+                            <constraint firstItem="tha-co-F9D" firstAttribute="top" secondItem="a2S-6s-f8P" secondAttribute="bottom" constant="15" id="v8Y-kw-eGU"/>
+                            <constraint firstItem="3j7-aq-TCb" firstAttribute="leading" secondItem="xJc-st-XVS" secondAttribute="leadingMargin" constant="40" id="zSL-KW-fb3"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9yj-C8-jB5" userLabel="First Responder" sceneMemberID="firstResponder"/>
