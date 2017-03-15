@@ -10,6 +10,8 @@ import UIKit
 
 class CreateTaskViewController: UIViewController {
 
+    @IBOutlet var taskNameTextField: UITextField!
+    @IBOutlet var importantSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +23,7 @@ class CreateTaskViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet var addTapped: UIButton!
 
     /*
     // MARK: - Navigation
