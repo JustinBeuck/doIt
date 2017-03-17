@@ -23,6 +23,11 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         tableView.delegate = self
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        getTasks()
+        tableView.reloadData()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tasks.count
     }
@@ -31,9 +36,9 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
         let cell = UITableViewCell()
         let task = tasks[indexPath.row]
         if task.important {
-            cell.textLabel?.text = "❗️\(task.name)"
+            cell.textLabel?.text = "❗️\(task.name!)"
         } else {
-            cell.textLabel?.text = task.name
+            cell.textLabel?.text = task.name!
         }
         
         return cell
@@ -51,7 +56,13 @@ class TasksViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func getTasks() {
-        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        do {
+         tasks = try context.fetch(Task.fetchRequest()) as! [Task]
+            print(tasks)
+        } catch {
+           print("OOPS WE HAVE AN ERROR")
+        }
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "selectTaskSegue" {
